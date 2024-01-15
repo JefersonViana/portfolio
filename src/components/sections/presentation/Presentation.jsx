@@ -103,7 +103,7 @@ function Presentation () {
           width: { xs: '200px', sm: matches ? '300px' : '200px', md: '420px' },
           height: { xs: '200px', sm: matches ? '300px' : '200px', md: '420px' },
           backgroundSize: 'cover',
-          borderRadius: '50%',
+          borderRadius: '80% 10% 80% 30%',
           backgroundColor: '#00000030',
         }}
       ></Box>

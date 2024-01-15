@@ -7,11 +7,11 @@ function HardSkills () {
     <Box
       sx={{
         display: 'grid',
-        gridTemplateColumns: { xs: '1fr', sm: '1fr 1fr', md: '1fr 1fr' },
+        gridTemplateColumns: { xs: '1fr', sm: '1fr', md: '1fr 1fr' },
         gap: '2rem',
         alignItems: 'center',
         backgroundColor: '#000000cc',
-        padding: { xs: '1rem', sm: '150px', md: '150px'},
+        padding: { xs: '1rem', sm: '1rem 0rem 1rem 4rem', md: '4rem 10rem'},
       }}
     >
       {listHardSkills.map((skill, index) => (
@@ -27,11 +27,12 @@ function HardSkills () {
             borderRadius: '2rem',
             opacity: '0.6',
             boxShadow: 'inset 0px 0px 5px 0px #39FF14',
-            padding: { xs: '1rem', sm: '2.4rem 5rem', md: '2.4rem 5rem'},
-            ":hover": {
-              opacity: '1',
-              transition: 'all 0.5s ease-in-out',
-            }
+            padding: { xs: '1rem', sm: '1rem', md: '2rem 1rem'},
+            width: { xs: '90%', sm: '80%', md: '90%'},
+            // ":hover": {
+            //   opacity: '1',
+            //   transition: 'all 0.5s ease-in-out',
+            // }
           }}
         >
           <h3 style={{ color: '#39FF1498'}}>{skill.name}</h3>
@@ -41,7 +42,7 @@ function HardSkills () {
               display: 'grid',
               gridTemplateColumns: '1fr 1fr',
               gap: '1rem',
-              width: { xs: '70%', sm: '10%'},
+              width: { xs: '70%', sm: '70%', md: '70%'},
               // rowGap: '2rem',
               // columnGap: '2rem',
             }}
@@ -51,13 +52,13 @@ function HardSkills () {
               key={index}
               sx={{
                 display: 'flex',
-                height: { xs: '30px', sm: '170px', md: '190px'},
-                width: { xs: '80px', sm: '800px', md: '1200px'},
+                height: { xs: '30px', sm: '30px', md: '30px'},
+                width: { xs: '100px', sm: '100px', md: '100px'},
                 // backgroundColor: 'red',
                 margin: '5px',
               }}
             >
-              <img src={item.img} alt={item.name} style={{ width: '15px', height: '15px', marginTop: '2px' }}/>
+              {item.img ? <img src={item.img} alt={item.name} style={{ width: '15px', height: '15px', marginTop: '2px' }}/> : null}
               <Box
                 sx={{
                   height: '100%',
