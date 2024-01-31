@@ -17,9 +17,6 @@ function Presentation () {
         justifyContent: { xs: 'center', sm: 'space-between', md: 'space-between' },
         alignItems: 'center',
         backgroundColor: '#000000cc',
-        // backgroundImage: `url(${background_liso})`,
-        // backgroundSize: 'cover',
-        // backgroundPosition: 'center',
         padding: { xs: '10px 20px', sm: matche2 ? '0px 40px' : '10px 20px', md: '20px 40px' },
         height: { xs: matche3 ? '90vh' : '90vh', sm: '90vh', md: '90vh' }, //45
       }}
@@ -32,7 +29,6 @@ function Presentation () {
           alignItems: { xs: 'center', sm: 'flex-start' },
           color: '#fff',
           width: { xs: '100%', sm: '50%', md: '50%' },
-          // backgroundColor: '#00000070',
         }}
       >
         <Typography
@@ -81,6 +77,10 @@ function Presentation () {
               height: { xs: '2.8rem', sm: matches ? '2.5rem' : '2rem', md: '3.2rem' },
               background: 'linear-gradient(to right bottom, #39FF1488, #39FF1410)',
               fontSize: { xs: '.9rem', sm: '.8rem' },
+              '&:hover': {
+                background: 'linear-gradient(to right bottom, #828282, #82828280)',
+                color: '#fff',
+              }
             }}
           >Download CV</Button>
           <Button
@@ -93,6 +93,11 @@ function Presentation () {
               marginTop: { xs: 2, sm: 0 },
               marginLeft: { xs: 0, sm: 2 },
               fontSize: { xs: '.9rem', sm: '.5rem', md: '.8rem' },
+              '&:hover': {
+                background: 'linear-gradient(to right bottom, #828282, #82828280)',
+                color: '#fff',
+                border: "1px solid #828282",
+              }
             }}
           >Entrar em contato</Button>
         </Box>
