@@ -3,6 +3,7 @@ import profile_img from '../../../assets/foto.png'
 // import background from '../../assets/background.png'
 // import background_liso from '../../assets/background_liso.png'
 import useMediaQuery from '@mui/material/useMediaQuery';
+import './presentation.css'
 
 
 function Presentation () {
@@ -34,6 +35,7 @@ function Presentation () {
         <Typography
           variant="h4"
           component="h1"
+          className="title-ola"
           sx={{
             fontSize: {
               xs: '2.5rem',
@@ -45,6 +47,7 @@ function Presentation () {
         <Typography
           variant="h4"
           component="h1"
+          className="title-name"
           sx={{
             fontSize: {
               xs: '2.5rem',
@@ -80,6 +83,7 @@ function Presentation () {
               '&:hover': {
                 background: 'linear-gradient(to right bottom, #828282, #82828280)',
                 color: '#fff',
+                transform: 'scale(1.1)',
               }
             }}
           >Download CV</Button>
@@ -93,10 +97,12 @@ function Presentation () {
               marginTop: { xs: 2, sm: 0 },
               marginLeft: { xs: 0, sm: 2 },
               fontSize: { xs: '.9rem', sm: '.5rem', md: '.8rem' },
+              animation: 'alternate-reverse 1s linear infinite',
               '&:hover': {
                 background: 'linear-gradient(to right bottom, #828282, #82828280)',
                 color: '#fff',
                 border: "1px solid #828282",
+                transform: 'scale(1.1)',
               }
             }}
           >Entrar em contato</Button>

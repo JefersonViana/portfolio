@@ -1,4 +1,5 @@
 import { Box, Typography } from "@mui/material"
+import './about.css';
 
 function About () {
   return (
@@ -17,6 +18,7 @@ function About () {
     >
       <Typography
         variant="h4"
+        className="title-sobre-mim"
         sx={{
           fontWeight: 'bold',
           marginTop: '3rem',
@@ -25,6 +27,7 @@ function About () {
       >Sobre mim</Typography>
       <Typography
         component="p"
+        className="p-sobre-mim"
         sx={{
           width: { xs: '85%', sm: '70%', md: '50%' },
           textAlign: 'justify',

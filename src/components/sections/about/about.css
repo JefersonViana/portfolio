@@ -1,0 +1,25 @@
+.title-sobre-mim {
+  animation: sobreMim 2s ease-in;
+}
+
+.p-sobre-mim {
+  animation: paragraph 2s ease-in;
+}
+
+@keyframes sobreMim {
+  0% {
+    transform: translateX(-600px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes paragraph {
+  0% {
+    transform: translateX(600px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
