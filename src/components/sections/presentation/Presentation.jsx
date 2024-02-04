@@ -1,8 +1,9 @@
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Button, Link, Typography } from "@mui/material";
 import profile_img from '../../../assets/foto.png'
 // import background from '../../assets/background.png'
 // import background_liso from '../../assets/background_liso.png'
 import useMediaQuery from '@mui/material/useMediaQuery';
+import cv from '../../../assets/curriculo.pdf'
 import './presentation.css'
 
 
@@ -17,7 +18,7 @@ function Presentation () {
         flexDirection: { xs: 'column-reverse', sm: 'row', md: 'row' },
         justifyContent: { xs: 'center', sm: 'space-between', md: 'space-between' },
         alignItems: 'center',
-        backgroundColor: '#000000cc',
+        backgroundColor: '#000010',
         padding: { xs: '10px 20px', sm: matche2 ? '0px 40px' : '10px 20px', md: '20px 40px' },
         height: { xs: matche3 ? '90vh' : '90vh', sm: '90vh', md: '90vh' }, //45
       }}
@@ -86,7 +87,14 @@ function Presentation () {
                 transform: 'scale(1.1)',
               }
             }}
-          >Download CV</Button>
+          >
+            <Link
+              underline="none"
+              download
+              sx={{ color: '#fff' }}
+              href={cv}
+            >Download CV</Link>
+          </Button>
           <Button
             variant="outline"
             sx={{
@@ -105,7 +113,13 @@ function Presentation () {
                 transform: 'scale(1.1)',
               }
             }}
-          >Entrar em contato</Button>
+          >
+            <Link
+              underline="none"
+              href="#contact"
+              sx={{ color: '#fff' }}
+            >Entrar em contato</Link>
+          </Button>
         </Box>
       </Box>
       <Box

@@ -6,13 +6,11 @@ function About () {
     <Box
       sx={{
         color: 'white',
-        backgroundColor: '#000000cc',
+        backgroundColor: '#000010',
         width: '100%',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        borderTop: '1px solid #39FF14',
-        borderBottom: '1px solid #39FF14',
         paddingBottom: '2rem',
       }}
     >

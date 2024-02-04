@@ -60,7 +60,8 @@ function ProjectsList() {
     <Box
       sx={{
         padding: '2rem',
-        backgroundColor: '#000000cc',
+        backgroundColor: '#000010',
+        height: '590px',
       }}
     >
     <Slider {...settings}>
@@ -78,6 +79,7 @@ function ProjectsList() {
             opacity: '0.6',
             boxShadow: 'inset 0px 0px 5px 0px #39FF14',
             width: '100%',
+            height: '400px',
           }}
         >
           <Box
@@ -127,28 +129,29 @@ function ProjectsList() {
                 color: '#FFF',
               }}
             >{item.description}</Typography>
-            <Link
-              href={item.link}
-              target='_blank'
-              rel='noreferrer'
-              underline='none'
-              sx={{
-                display: 'flex',
-                alignSelf: 'center',
-                marginTop: '.8rem',
-                marginBottom: '.8rem',
-              }}
-            >
-              <Button variant='contained' sx={{
-                background: 'linear-gradient(to right bottom, #39FF1488, #39FF1410)',
-                '&:hover': {
-                  background: '#39FF14',
-                },
-              }}>{
-                item.name === 'Aguarde...' ? 'Github' : 'Ver mais'
-              }</Button>
-            </Link>
           </Box>
+          <Link
+            href={item.link}
+            target='_blank'
+            rel='noreferrer'
+            underline='none'
+            sx={{
+              display: 'flex',
+              alignSelf: 'center',
+              justifyContent: 'center',
+              marginTop: '.8rem',
+              marginBottom: '.8rem',
+            }}
+          >
+            <Button variant='contained' sx={{
+              background: 'linear-gradient(to right bottom, #39FF1488, #39FF1410)',
+              '&:hover': {
+                background: '#39FF14',
+              },
+            }}>{
+              item.name === 'Aguarde...' ? 'Github' : 'Ver mais'
+            }</Button>
+          </Link>
         </Box>
   ))}
     </Slider>
